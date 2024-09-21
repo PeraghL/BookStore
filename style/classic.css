@@ -1,3 +1,15 @@
 .dp-none {
     display: none;
 }
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
