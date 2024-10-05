@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="style/classic.css" />
   </head>
-  <body>
+  <body onload="init()">
     <header class="header">
       <div class="head_icon">
         <a href="#"
@@ -25,7 +25,8 @@
       </div>
     </header>
 
-    <div class="container_main">
+    <div class="container_main" id="renderContainer">
+
       <div class="main_card">
         <div class="card_header">
           <h2>BUCH NAME</h2>
@@ -62,10 +63,15 @@
           </div>
           <div class="card_add_comment">
             <input type="text" placeholder="Schreibe dein Kommentar" />
-            <img src="ref/icons/paper-plane-solid.svg" alt="Pfeil" />
+            <img src="ref/icons/paper-plane-solid.svg" alt="Pfeil" onclick="addCommentToJson()" />
           </div>
         </div>
       </div>
+
     </div>
+
+    <script src="js/db.js"></script>
+    <script src="js/template.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
